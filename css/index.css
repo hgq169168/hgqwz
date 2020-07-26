@@ -1,0 +1,239 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news {
+    height: 165px;
+    border: 1px solid #ececec;
+}
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    /* border: 1p dotted red; */
+    border-bottom: 1px dotted #ececee;
+    margin: 0 15px;
+}
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+.news-hd .more {
+    float: right;
+}
+.news-hd .more::after {
+    font-family: "icomoon";
+    content: "\e920";
+}
+.news-bd {
+    margin: 5px 15px 0;
+}
+.news-bd ul li {
+    height: 24px;
+    line-height: 24px;
+    /* 显示省略号步骤 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px dotted #ececec;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 252px;
+}
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    text-align: center;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: aqua;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+.discount {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+    height: 15px;
+    background: url(../upload/discount.jpg) no-repeat;
+}
+.bargain {
+    margin-top: 5px;
+}
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+.recom-hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+.recom-bd {
+    float: left;
+}
+.recom-bd ul li {
+    position: relative;
+    float: left;
+}
+.recom-bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+.recom-bd ul li:nth-child(-n+3)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+/* 1楼电器层 */
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.tab-list {
+    float: right;
+    line-height: 30px;
+}
+.tab-list ul li {
+    float: left;
+}
+.tab-list ul li a {
+    margin: 0 15px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.box-bd {
+    height: 361px;
+}
+.tab-list-item>div {
+    float: left;
+    height: 361px;
+}
+.col-210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col-210 ul {
+    padding-left: 12px;
+}
+.col-210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+.col-329 {
+    width: 329px;
+}
+.col-221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col-219 {
+    width: 219px;
+}
+.bb {
+    /* a标签包含有宽度的盒子，需要转换为block */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
